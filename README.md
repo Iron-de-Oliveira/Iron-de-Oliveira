@@ -12,7 +12,8 @@ Olá meu nome é Iron de Oliveira Cardoso! Sou natural de Aragauína-To, tenho 2
 - Análise e desenvolvimento de sistemas (4° Período) [UNITINS](https://www.unitins.br/nPortal/).
 
 Acesse [meu linkedin](https://www.linkedin.com/in/iron-de-oliveira/)  para saber mais sobre mim! 
-Conheça mus [trabalhos](https;//)!
+
+Conheça meus [trabalhos](https;//)!
 
 
 ### Linguagens e Tecnologias 💻
