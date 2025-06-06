@@ -81,5 +81,5 @@ Acesse [meu linkedin](https://www.linkedin.com/in/iron-de-oliveira/)  para saber
 ### Estatísticas
 <div>
 <img height="200px" src="https://github-redme-stats.vercel.app/api?username=Iron-de-Oliveira&show_icons=true&include_all_commits=true&locale=pt-br"/> 
-<img  height="200px"  src=" https://github-redme-stats.vercel.app/api/top-langs?username=Iron-de-Oliveira&show_icons=true&locale=pt-br" />
+<img  height="200px"  src=" https://github-redme-stats.vercel.app/api/top-langs?username=Iron-de-Oliveira&show_icons=true&locale=pt-br&layout=compact&langs_count=9" />
 </div>
