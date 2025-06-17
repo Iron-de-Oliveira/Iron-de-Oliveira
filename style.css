@@ -1,0 +1,312 @@
+html, body{
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+#navegacao{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    padding: 0 20px 0 0;
+    background-color: #2e5057ee;
+    box-shadow: 0px 3px 5px  #00ffeabe;
+
+    
+}
+#msg_copy{
+    position: relative;
+    margin:auto ;
+    font-size: 20px;
+    transition: ease-in 0.3s;
+}
+
+nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+}
+nav div a{
+      color: #00FFEA;
+      font-size: 20px;
+      text-decoration: none; 
+      
+}
+nav div a:hover{
+    transition: ease-in 0.2s;
+    transform: scale(1.03);
+    filter: drop-shadow(0px 0px 5px #00FFEA);
+}
+
+/* animações */
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Fica atrás de tudo */
+    background-color: #000000; /* Se quiser, pode tirar o fundo preto */
+}
+
+/* fontes */
+.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.share-tech-mono-regular {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#page01{
+    width:100%;
+    height: 700px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#page01 button{
+    font-size: 32px;
+    background: 0;
+    color: #00FFEA;
+    filter: drop-shadow(0px 0px 9px #00FFEA);
+    border: solid 0px;
+}
+#saldacoes{
+    text-align: center;
+    height: 182px;
+}
+#saldacoes h1{
+    margin: 0;
+    font-size: 70px;
+    filter: drop-shadow(0px 0px 9px #00FFEA);
+}
+#saldacoes p{
+    margin: 0;
+    font-size: 32px;
+}
+
+#links-pages{
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+#links-pages img{
+    width: 50px;
+    height: 50px;
+}
+#links-pages img:hover{
+    filter:drop-shadow( 0px 0px 4px white);
+    border-radius: 6px;
+
+}
+
+/*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  */
+
+#page02{
+    width: 100%;
+    height: 600px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#text01{
+    width: 90%;
+}
+#text01 h2, h3{
+    color: #58F9FF;
+}
+
+
+#text02{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+#front{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+#front p{
+    font-size: 24px;
+    color: whitesmoke;
+}
+#front div{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px #58F9FF; 
+}
+#front div p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 4px 0;
+    border-radius: 0 0 8px 8px;
+    background-color: #000000;
+    color: white;
+}
+#back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#back p{
+    font-size: 24px;
+    color: whitesmoke;
+}
+#back div{
+    width: 110px;
+    height: 150px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #58F9FF; 
+}
+#back div p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 4px 0;
+    border-radius: 0 0 8px 8px;
+    background-color: #000000;
+    color: white;
+}
+
+#sites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 100px 0;
+}
+
+#site01, #site02, #site03, #site04{
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #58F9FF;
+    filter: saturate(0);
+    transition: ease-in 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#site01:hover, #site02:hover, #site03:hover, #site04:hover, .texto-oculto:hover{
+    cursor: pointer;
+    transition: ease-in 0.3s;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: saturate(100%);
+    box-shadow: 0px 2px 10px #58F9FF;
+    border-radius: 8px;
+}
+
+.texto-oculto {
+    opacity: 0;
+    width: 250px;
+    height: 350px;
+    color: black;
+    font-size: 28px;
+}
+.texto-oculto:hover{
+    opacity: 1;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    filter: contrast(150%);
+    filter: drop-shadow(0px 0px 5px black);
+    color: #00FFEA;
+}
+
+#site01{
+    background-image: url("/portifolio/img2/site_calculadora.png");
+    background-position: center;
+    background-size: 700px;
+    object-fit: cover;
+}
+
+/*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  */
+
+#page03{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#page03 h1{
+    filter: drop-shadow(0px 1px 4px rgba(52, 255, 52, 0.74));
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color:  #2e5057ee;
+    box-shadow: 0px -2px 4px #00ffeabe;
+    
+}
+
+#email, #linkedin, #telefone{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+footer div a{
+     text-decoration: none;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+    }
+
+footer img{
+    width: 35px;
+    height: 35px;
+}
