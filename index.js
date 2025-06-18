@@ -87,7 +87,6 @@ window.addEventListener('resize', () => {
 });
 
 
-
 function copy() {
     const texto = document.getElementById("email").innerText;
 
@@ -134,3 +133,21 @@ function copy() {
 function site01(){
     window.location.href = "https://iron-de-oliveira.github.io/trabalhos/"
 }
+
+const front = document.getElementById('front');
+const back = document.getElementById('back');
+
+let angleFront = 0;
+let angleBack = 0;
+
+function animate2() {
+    angleFront += 0.5; // Velocidade do front (45 graus)
+    angleBack += 0.3;  // Velocidade do back (135 graus)
+
+    front.style.transform = `translate(-50%, -50%) rotate(${45 + angleFront}deg)`;
+    back.style.transform = `translate(-50%, -50%) rotate(${135 + angleBack}deg)`;
+
+    requestAnimationFrame(animate2);
+}
+
+animate2();
