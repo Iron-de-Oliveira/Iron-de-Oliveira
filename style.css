@@ -7,7 +7,6 @@ html, body{
 }
 
 #navegacao{
-    z-index: 2;
     width: 100%;
     height: 50px;
     position: fixed;
@@ -18,6 +17,7 @@ html, body{
     padding: 0 20px 0 0;
     background-color: #2e5057ee;
     box-shadow: 0px 3px 5px  #00ffeabe;
+    z-index: 3;
 
     
 }
@@ -107,6 +107,146 @@ nav div a:hover{
     animation-delay: 3.5s;
 }
 
+
+.planet {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #123444, #5d727c, #6b701d);
+    border-radius: 50%;
+    box-shadow: 0 0 30px #00aaff;
+    z-index: 1;
+}
+#front {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+}
+
+/* Orbitas Back */
+#back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+    transform-origin: center;
+}
+
+/* Itens front */
+.front-item, .back-item {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-item img,
+.back-item img {
+    width: 100%;
+}
+
+/* Posicionamento inicial Front */
+#html   { transform: translate(150px, 0); }
+#css    { transform: translate(-150px, 0); }
+#js     { transform: translate(0, 150px); }
+#bootstrap { transform: translate(0, -150px); }
+#tailwind  { transform: translate(110px, 110px); }
+
+/* Posicionamento inicial Back */
+#python { transform: translate(200px, 0); }
+#flask  { transform: translate(-200px, 0); }
+#mysql  { transform: translate(0, 200px); }
+
+/*  *//*  *//*  *//*  */
+/*  *//*  *//*  */
+
+.space {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Planeta central */
+.planet {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, #004f77, #29f8ff, rgb(88, 45, 45),#004f77);
+    border-radius: 50%;
+    box-shadow: 0 0 30px #00aaff;
+    z-index: 5;
+    animation: girarPlaneta 10s linear infinite;
+}
+
+@keyframes girarPlaneta {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Configuração geral */
+#text02 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Orbitas Front */
+#front {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+}
+
+/* Orbitas Back */
+#back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+    transform-origin: center;
+}
+
+/* Itens front */
+.front-item, .back-item {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-item img,
+.back-item img {
+    width: 100%;
+}
+
+/* Posicionamento inicial Front */
+#html   { transform: translate(150px, 0); }
+#css    { transform: translate(-150px, 0); }
+#js     { transform: translate(0, 150px); }
+#bootstrap { transform: translate(0, -150px); }
+#tailwind  { transform: translate(110px, 110px); }
+
+/* Posicionamento inicial Back */
+#python { transform: translate(200px, 0); }
+#flask  { transform: translate(-200px, 0); }
+#mysql  { transform: translate(0, 200px); }
+
+
+
 /* fontes *//* fontes *//* fontes */
 /* fontes *//* fontes *//* fontes */
 
@@ -180,7 +320,7 @@ nav div a:hover{
 
 #page02{
     width: 100%;
-    height: 600px;
+    height: 700px;
     font-size: 32px;
     display: flex;
     justify-content: center;
@@ -191,6 +331,8 @@ nav div a:hover{
 
 #text01{
     width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 #text01 h2, h3{
     color: #58F9FF;
@@ -208,61 +350,10 @@ nav div a:hover{
     color: #000000;
 }
 
-
-#front{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
+#text02 div section img {
+    width: 45px;
+    height: 45px;
 }
-#front p{
-    font-size: 24px;
-    color: whitesmoke;
-}
-#front div{
-    width: 105px;
-    height: 105px;
-    background-color: white;
-    border-radius: 8px;
-     box-shadow: 0px 0px 4px #58f9ff9f; 
-    border-radius: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#front div img{
-    width: 80px;
-    height: 80px;
-}
-
-#back{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-#back p{
-    font-size: 24px;
-    color: whitesmoke;
-}
-#back div{
-    width: 105px;
-    height: 105px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 4px #58f9ff9f; 
-    border-radius: 50px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#back div img{
-    width: 80px;
-    height: 80px;
-}
-
 
 #sites{
     display: flex;
@@ -312,7 +403,7 @@ nav div a:hover{
 }
 
 #site01{
-    background-image: url("img2/site_calculadora.png");
+    background-image: url("/portifolio/img2/site_calculadora.png");
     background-position: center;
     background-size: 700px;
     object-fit: cover;
