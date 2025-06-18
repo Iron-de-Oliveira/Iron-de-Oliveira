@@ -1,59 +1,94 @@
 const canvas = document.getElementById('background-canvas');
-    const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d');
 
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    canvas.width = width;
-    canvas.height = height;
+let width = window.innerWidth;
+let height = window.innerHeight;
+canvas.width = width;
+canvas.height = height;
 
-    const particles = [];
-    const numParticles = 50;
+// === Partículas descendo ===
+const particles = [];
+const numParticles = 100;
 
-    for (let i = 0; i < numParticles; i++) {
-        particles.push({
-            x: Math.random() * width,
-            y: Math.random() * height,
-            radius: Math.random() * 2 + 1,
-            speed: Math.random() * 1 + 0.6
-        });
-    }
+for (let i = 0; i < numParticles; i++) {
+    particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 0.5 + 1,
+        speed: Math.random() * 1 + 0.6
+    });
+}
 
-    function animate() {
-        // Efeito de rastro
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.8)'; // Quanto menor, mais longo o rastro
-        ctx.fillRect(0, 0, width, height);
+// === Estrelas passando na diagonal ===
+const stars = [];
+const numStars = 2;
 
-        particles.forEach(p => {
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+for (let i = 0; i < numStars; i++) {
+    stars.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 3 + 1,
+        speed: Math.random() * 2 + 2
+    });
+}
 
-            // Cor Neon com mais brilho
-            ctx.fillStyle = 'rgba(0, 255, 234, 0.8)';
-            ctx.shadowColor = '#00FFEA';
-            ctx.shadowBlur = 10; // blur para ficar mais neon
-            ctx.fill();
+function animate() {
+    // Efeito de rastro
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+    ctx.fillRect(0, 0, width, height);
 
-            p.y += p.speed;
+    // === Partículas descendo ===
+    particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(119, 235, 255, 0.8)';
+        ctx.shadowColor = 'white';
+        ctx.shadowBlur = 5;
+        ctx.fill();
 
-            if (p.y > height) {
-                p.y = 0;
-                p.x = Math.random() * width;
-            }
-        });
+        p.y += p.speed;
 
-        requestAnimationFrame(animate);
-    }
-
-    animate();
-
-    window.addEventListener('resize', () => {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        canvas.width = width;
-        canvas.height = height;
+        if (p.y > height) {
+            p.y = 0;
+            p.x = Math.random() * width;
+        }
     });
 
-function copy(email) {
+    // === Estrelas na diagonal ===
+    stars.forEach(s => {
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.shadowColor = '#00BFFF';
+        ctx.shadowBlur = 8;
+        ctx.fill();
+
+        // Movimento na diagonal (ângulo de 90 graus em relação às partículas que descem)
+        s.x += s.speed;
+        s.y -= s.speed;
+
+        // Reinicia estrela se sair da tela
+        if (s.x > width || s.y < 0) {
+            s.x = Math.random() * width * 0.5; // renasce em uma faixa da esquerda
+            s.y = height + Math.random() * height * 0.5; // renasce abaixo
+        }
+    });
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+window.addEventListener('resize', () => {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+});
+
+
+
+function copy() {
     const texto = document.getElementById("email").innerText;
 
     navigator.clipboard.writeText(texto)
