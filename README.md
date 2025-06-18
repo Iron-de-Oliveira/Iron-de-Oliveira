@@ -13,7 +13,7 @@ Olá meu nome é Iron de Oliveira Cardoso! Sou natural de Aragauína-To, tenho 2
 
 Acesse [meu linkedin](https://www.linkedin.com/in/iron-de-oliveira/)  para saber mais sobre mim! 
 
-Conheça meus [trabalhos](https;//)!
+Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
 
 
 ### Linguagens e Tecnologias 💻
