@@ -108,57 +108,6 @@ nav div a:hover{
 }
 
 
-.planet {
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(circle, #123444, #5d727c, #6b701d);
-    border-radius: 50%;
-    box-shadow: 0 0 30px #00aaff;
-    z-index: 1;
-}
-#front {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    transform-origin: center;
-}
-
-/* Orbitas Back */
-#back {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(135deg);
-    transform-origin: center;
-}
-
-/* Itens front */
-.front-item, .back-item {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.front-item img,
-.back-item img {
-    width: 100%;
-}
-
-/* Posicionamento inicial Front */
-#html   { transform: translate(150px, 0); }
-#css    { transform: translate(-150px, 0); }
-#js     { transform: translate(0, 150px); }
-#bootstrap { transform: translate(0, -150px); }
-#tailwind  { transform: translate(110px, 110px); }
-
-/* Posicionamento inicial Back */
-#python { transform: translate(200px, 0); }
-#flask  { transform: translate(-200px, 0); }
-#mysql  { transform: translate(0, 200px); }
 
 /*  *//*  *//*  *//*  */
 /*  *//*  *//*  */
@@ -403,7 +352,7 @@ nav div a:hover{
 }
 
 #site01{
-    background-image: url("img2/site_calculadora.png");
+    background-image: url("/portifolio/img2/site_calculadora.png");
     background-position: center;
     background-size: 700px;
     object-fit: cover;
