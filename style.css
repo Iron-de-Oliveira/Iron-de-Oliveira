@@ -403,7 +403,7 @@ nav div a:hover{
 }
 
 #site01{
-    background-image: url("/portifolio/img2/site_calculadora.png");
+    background-image: url("img2/site_calculadora.png");
     background-position: center;
     background-size: 700px;
     object-fit: cover;
