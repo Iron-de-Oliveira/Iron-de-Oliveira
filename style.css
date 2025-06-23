@@ -269,13 +269,14 @@ nav div a:hover{
 
 #page02{
     width: 100%;
-    height: 700px;
+    height: 750px;
     font-size: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    margin: 0 0 250px 0;
 }
 
 #text01{
@@ -304,74 +305,91 @@ nav div a:hover{
     height: 40px;
 }
 
-#sites{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0 0 100px 0;
-}
-
-#site01, #site02, #site03, #site04{
-    width: 250px;
-    height: 350px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px #58F9FF;
-    filter: saturate(0);
-    transition: ease-in 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#site01:hover, #site02:hover, #site03:hover, #site04:hover, .texto-oculto:hover{
-    cursor: pointer;
-    transition: ease-in 0.3s;
-    width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: saturate(100%);
-    box-shadow: 0px 2px 10px #58F9FF;
-    border-radius: 8px;
-}
-
-.texto-oculto {
-    opacity: 0;
-    width: 250px;
-    height: 350px;
-    color: black;
-    font-size: 28px;
-}
-.texto-oculto:hover{
-    opacity: 1;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
-    filter: contrast(150%);
-    filter: drop-shadow(0px 0px 5px black);
-    color: #00FFEA;
-}
-
-#site01{
-    background-image: url("img2/site_calculadora.png");
-    background-position: center;
-    background-size: 700px;
-    object-fit: cover;
-}
-
 /*  *//*  *//*  *//*  *//*  *//*  */
 /*  *//*  *//*  *//*  *//*  *//*  */
 
 #page03{
     width: 100%;
-    height: 750px;
+    height: 1350px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 50px 0 0 0;
+    padding: 100px 0 0 0;
 }
 #page03 h1{
     filter: drop-shadow(0px 1px 4px rgba(52, 255, 52, 0.74));
 }
+
+
+#sites{
+    width: 100%;
+    height: 1350px;
+    display: flex;
+    gap:50px;
+    flex-direction: column;
+}
+
+#sites img{
+    width: 30px;
+    height: 30px;
+}
+
+#tec{
+    display: flex;
+    align-items: center;
+    gap:3px;
+}
+
+button{
+    background: 0;
+    border: solid 0;
+    box-shadow: 0px 2px 4px #00FFEA;
+    border-radius: 8px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px
+
+}
+button:hover{
+    cursor: pointer;
+    filter: saturate(1);
+    transition: ease-in 0.2s;
+    box-shadow: 0px 2px 5px #00FFEA;
+    color:#00FFEA;
+    transform: scale(1.03);
+
+}
+
+#site01, #site02, #site03, #site04{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px white ;
+    border: solid 0;
+    transition: ease-in 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#sub01, #sub02, #sub03, #sube04{
+    width: 350px;
+    height: 200px;
+}
+
+#sub01 img, #sub02 img, #sub03 img, #sub04 img{
+    width: 350px;
+    height: 200px;
+}
+
+
+/*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  */
 
 footer{
     display: flex;
