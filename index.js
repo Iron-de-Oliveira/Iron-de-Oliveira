@@ -133,7 +133,7 @@ function copy() {
 function site01(){
     window.location.href = "https://iron-de-oliveira.github.io/trabalhos/"
 }
-function site02{
+function site02(){
     window.location.href = "https://iron-de-oliveira.github.io/cura-engenharia/"
 }
 
