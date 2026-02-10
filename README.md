@@ -67,7 +67,7 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
     alt="html"
     title="PostGres"
     width="40px"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/postegresql/postegresql-original.svg"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postegresql/postegresql-original.svg"
 />
 <img
     alig="left"
@@ -88,7 +88,7 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
     alt="html"
     title="Node.js"
     width="40px"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/nodejs/nodejs-original.svg"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
 />
     
 </div>
