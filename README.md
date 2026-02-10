@@ -9,7 +9,7 @@
 Olá meu nome é Iron de Oliveira Cardoso! Sou natural de Aragauína-To, tenho 21 anos e entrei no mundo da programção web em 2024. Minhas formações são:
 
 - Analista de informática - pensar cursos.
-- Análise e desenvolvimento de sistemas (4° Período) [UNITINS](https://www.unitins.br/nPortal/).
+- Análise e desenvolvimento de sistemas (5/6 Período) [UNITINS](https://www.unitins.br/nPortal/).
 
 Acesse [meu linkedin](https://www.linkedin.com/in/iron-de-oliveira/)  para saber mais sobre mim! 
 
