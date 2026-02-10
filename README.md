@@ -62,19 +62,12 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
     width="40px" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" 
 />
- <img
-    alig="left"
-    alt="html"
-    title="Flask"
-    width="40px" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" 
-/>
 <img
  alig="left"
     alt="html"
     title="PostGres"
     width="40px"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/postegresql/postegressql-original.svg"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/postegresql/postegresql-original.svg"
 />
 <img
     alig="left"
