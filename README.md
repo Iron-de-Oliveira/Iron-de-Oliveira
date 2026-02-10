@@ -64,7 +64,6 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
 />
  <img
     alig="left"
-    background-color="white 10px"
     alt="html"
     title="Flask"
     width="40px" 
@@ -72,7 +71,6 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
 />
 <img
  alig="left"
-    background-color="white 10px"
     alt="html"
     title="PostGres"
     width="40px"
@@ -80,7 +78,6 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
 />
 <img
     alig="left"
-    background-color="white 10px"
     alt="html"
     title="React"
     width="40px"
@@ -88,7 +85,6 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
 />
 <img
     alig="left"
-    background-color="white 10px"
     alt="html"
     title="Prisma.Js"
     width="40px"  
@@ -96,7 +92,6 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
 />
 <img
     alig="left"
-    background-color="white 10px"
     alt="html"
     title="Node.js"
     width="40px"
