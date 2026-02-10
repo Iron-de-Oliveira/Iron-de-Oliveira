@@ -58,13 +58,6 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
  <img
     alig="left"
     alt="html"
-    title="Tailwind"
-    width="40px" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
-/>
- <img
-    alig="left"
-    alt="html"
     title="Bootstrap"
     width="40px" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" 
