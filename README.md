@@ -67,7 +67,7 @@ Conheça meus [trabalhos](https://iron-de-oliveira.github.io/Iron-de-Oliveira/)!
     alt="html"
     title="PostGres"
     width="40px"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postegresql/postegresql-original.svg"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
 />
 <img
     alig="left"
